@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Montserrat", sans-serif;
+  color: #656774;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btnPhone-outline {
+  background: #b61984;
+  border-radius: 25px;
+  border: 2px solid #b61984;
+  padding: 13.5px 44px;
+  color: #f5f9fe;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 3px 6px #c9d8f4;
+  letter-spacing: 0.03rem;
+  transition: all 0.3s;
+}
+.btnPhone-outline:hover {
+  background: #f5f9fe;
+  border-radius: #fff;
+  color: #b61984;
+  background-position: right center;
+  transition: all 0.3s;
+}
+
+header .yellow img {
+  position: absolute;
+  right: 0;
+  left: 0;
+  pointer-events: none;
+}
+header .btnmenu {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+header .nav-item a {
+  color: #1d365e;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-left: 25px;
+}
+header .nav-icon i {
+  margin-left: 20px;
+}
+header .nav-icon i:hover {
+  color: #b61984;
+  transition: all 0.3s;
+}
+
+.carosel1 {
+  margin: auto;
+  width: 80%;
+}
+.carosel1 .flex {
+  display: flex;
+}
+.carosel1 .flex .left {
+  width: 50%;
+}
+.carosel1 .flex .left .text {
+  padding: 200px 0;
+  line-height: 50px;
+}
+.carosel1 .flex .left .text h2 {
+  color: #b61984;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.carosel1 .flex .left .text h1 {
+  color: #121212;
+  font-size: 57px;
+  font-weight: 700;
+}
+.carosel1 .tim img {
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+}/*# sourceMappingURL=main.css.map */

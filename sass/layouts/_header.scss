@@ -1,0 +1,35 @@
+header{
+    .yellow{
+        img{
+            position: absolute;
+            right: 0;
+            left: 0;
+            pointer-events: none;
+           
+        }
+       }
+    .btnmenu{
+        display: flex;
+        align-items: center;
+        padding-left: $bd-3
+    }
+  
+    .nav-item a{
+            @include stylerText($color-blue-1,$fs-2,$fw-2);
+            margin-left: $bd-3;
+
+    }
+    
+
+    
+    .nav-icon i{
+        margin-left: 20px;
+        &:hover{
+           color: $color-1;
+           transition: all 0.3s;
+        }
+    }
+   
+    
+}   
+
