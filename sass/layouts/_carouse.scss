@@ -1,37 +1,53 @@
+.carosel1 {
+    margin: auto;
+    width: 80%;
 
-.carosel1{
-        margin: auto;
-        width: 80%;
-        
-
-   .flex{
-    display: flex;
-    .left{
-        width: 50%;
-        .text{
-            padding: 200px 0;
-            line-height: 50px;
-            h2{
-                @include stylerText($color-1,$fs-2,$fw-1);
-            }
-            h1{
-                @include stylerText($color-dark-2,$fs-9,$fw-3)
+    .flex {
+        display: flex;
+        .left {
+            width: 50%;
+            .text {
+                padding: 200px 0;
+                line-height: 50px;
+                h2 {
+                    @include stylerText($color-1, $fs-2, $fw-1);
+                }
+                h1 {
+                    @include stylerText($color-dark-2, $fs-9, $fw-3);
+                }
             }
         }
-        
-      
     }
-  
-   }
-  .tim{
-    img{
-    
-        position: absolute;
-        
-        top: 0;
-        pointer-events: none;
-       
-    
-   }
-  }
+    .tim {
+        img {
+            position: absolute;
+
+            top: 0;
+            pointer-events: none;
+        }
+    }
+}
+
+.carosel2 {
+    .row {
+        margin: 0 auto;
+        width: 80%;
+        .card{
+            
+            text-align: center;
+            border-radius: 10px;
+            h4{
+                @include stylerText($color-1,$fs-10,$fw-2);
+            }
+            h2{
+                @include stylerText($color-dark-4,$fs-9,$fw-3);
+            }
+            p{
+                @include stylerText($color-dark-2,$fs-1,$fw-1);
+                line-height: 1.8em;
+                
+            }
+           
+        }
+    }
 }
