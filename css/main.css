@@ -56,57 +56,175 @@ header .nav-icon i:hover {
   transition: all 0.3s;
 }
 
-.carosel1 {
+.carosel .carosel1 {
+  position: relative;
+}
+.carosel .carosel1 .flex {
   margin: auto;
   width: 80%;
-}
-.carosel1 .flex {
   display: flex;
 }
-.carosel1 .flex .left {
+.carosel .carosel1 .flex .left {
   width: 50%;
 }
-.carosel1 .flex .left .text {
+.carosel .carosel1 .flex .left .text {
   padding: 200px 0;
   line-height: 50px;
 }
-.carosel1 .flex .left .text h2 {
+.carosel .carosel1 .flex .left .text h2 {
   color: #b61984;
   font-size: 1.1rem;
   font-weight: 400;
 }
-.carosel1 .flex .left .text h1 {
-  color: #121212;
-  font-size: 23.5px;
+.carosel .carosel1 .flex .left .text h1 {
+  color: #191919;
+  font-size: 57px;
   font-weight: 700;
 }
-.carosel1 .tim img {
+.carosel .carosel1 .tim img {
   position: absolute;
-  top: 0;
+  bottom: 0;
   pointer-events: none;
 }
-
-.carosel2 .row {
-  margin: 0 auto;
+.carosel .carosel2 {
+  position: relative;
+  background-color: #dcd1f3;
+}
+.carosel .carosel2 .trang {
+  bottom: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.carosel .carosel2 .trang img {
+  max-width: 100%;
+  height: auto;
+}
+.carosel .carosel2 .row {
+  margin: auto;
   width: 80%;
 }
-.carosel2 .row .card {
+.carosel .carosel2 .row .card {
   text-align: center;
   border-radius: 10px;
 }
-.carosel2 .row .card h4 {
+.carosel .carosel2 .row .card h4 {
   color: #b61984;
   font-size: 0.75rem;
   font-weight: 600;
 }
-.carosel2 .row .card h2 {
+.carosel .carosel2 .row .card h2 {
   color: #191919;
   font-size: 23.5px;
   font-weight: 700;
 }
-.carosel2 .row .card p {
+.carosel .carosel2 .row .card p {
   color: #121212;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.8em;
+}
+.carosel .carosel3 {
+  position: relative;
+}
+.carosel .carosel3 .flex {
+  padding-top: 50px;
+  display: flex;
+  width: 75%;
+  margin: auto;
+}
+.carosel .carosel3 .flex .left {
+  display: block;
+  overflow: hidden;
+  width: 605;
+}
+.carosel .carosel3 .flex .left img {
+  display: block;
+  margin: 0;
+  line-height: 0;
+  max-width: 100%;
+  height: auto;
+}
+.carosel .carosel3 .flex .right {
+  width: 40%;
+}
+.carosel .carosel3 .flex .right .formthunhat {
+  display: flex;
+  justify-content: center;
+}
+.carosel .carosel3 .flex .right .formthunhat .name {
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+  padding-right: 1em;
+}
+.carosel .carosel3 .flex .right .formthunhat .name .fa-solid {
+  top: 8.6rem;
+  color: #b61984;
+  left: 57.5em;
+  top: 8.7rem;
+  position: absolute;
+}
+.carosel .carosel3 .flex .right .formthunhat .email {
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+}
+.carosel .carosel3 .flex .right .formthunhat .email .fa-solid {
+  line-height: 1;
+  color: #b61984;
+  left: 72em;
+  top: 8.7rem;
+  position: absolute;
+}
+.carosel .carosel3 .flex form {
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+.carosel .carosel3 .flex form h2 {
+  color: #191919;
+  font-size: 30px;
+  font-weight: 700;
+}
+.carosel .carosel3 .flex form .over {
+  margin-bottom: 25px;
+}
+.carosel .carosel3 .flex form .form-group {
+  width: 90%;
+}
+.carosel .carosel3 .flex form .form-group .form-control {
+  padding: 0.5rem 2.2rem;
+}
+.carosel .carosel3 .flex form .form-group textarea {
+  padding: 1em 1em 1em 3.5em !important;
+  height: 90px;
+  line-height: 1.5;
+  font-size: 0.8em !important;
+  border-radius: 20px;
+}
+.carosel .carosel3 .flex form .form-group .input-group-langugue {
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+}
+.carosel .carosel3 .flex form .form-group .input-group-langugue .fa-solid {
+  color: #b61984;
+  left: 57.5em;
+  top: 12.2rem;
+  position: absolute;
+}
+.carosel .carosel3 .flex form .form-group .input-group-messages {
+  color: #b61984;
+  left: 58em;
+  top: 16.5rem;
+  position: absolute;
+}
+.carosel .carosel3 .tim2 {
+  bottom: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.carosel .carosel3 .tim2 img {
+  max-width: 100%;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */

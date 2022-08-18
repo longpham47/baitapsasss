@@ -1,53 +1,195 @@
-.carosel1 {
-    margin: auto;
-    width: 80%;
-
-    .flex {
-        display: flex;
-        .left {
-            width: 50%;
-            .text {
-                padding: 200px 0;
-                line-height: 50px;
-                h2 {
-                    @include stylerText($color-1, $fs-2, $fw-1);
-                }
-                h1 {
-                    @include stylerText($color-dark-2, $fs-9, $fw-3);
+.carosel{
+    
+    .carosel1 {
+        position: relative;
+    
+        .flex {
+            margin: auto;
+            width: 80%;
+            display: flex;
+            .left {
+                width: 50%;
+                .text {
+                    padding: 200px 0;
+                    line-height: 50px;
+                    h2 {
+                        @include stylerText($color-1, $fs-2, $fw-1);
+                    }
+                    h1{
+                        @include stylerText($color-dark-4,$fs-12,$fw-3)
+                     }
                 }
             }
         }
+        .tim {
+            img {
+                position: absolute;
+        
+                bottom: 0;
+                pointer-events: none;
+            }
+        }
     }
-    .tim {
-        img {
+    
+    
+    .carosel2 {
+        position: relative;
+        background-color: $color-2;
+        // z-index: 2;
+        .trang {
+            bottom: 0;
             position: absolute;
-
-            top: 0;
             pointer-events: none;
+            img {
+                // background-color: $color-2;
+               
+                max-width: 100%;
+                height: auto;
+                // padding-top: 0px;
+              
+            }
+        }
+    
+        .row {
+            margin: auto;
+            width: 80%;
+    
+            .card {
+                text-align: center;
+                border-radius: 10px;
+                h4 {
+                    @include stylerText($color-1, $fs-10, $fw-2);
+                }
+                h2 {
+                    @include stylerText($color-dark-4, $fs-9, $fw-3);
+                }
+                p {
+                    @include stylerText($color-dark-2, $fs-1, $fw-1);
+                    line-height: 1.8em;
+                }
+            }
         }
     }
-}
-
-.carosel2 {
-    .row {
-        margin: 0 auto;
-        width: 80%;
-        .card{
+    
+    .carosel3 {
+        position: relative;
+       
+        .flex {
+            padding-top: 50px;
+            display: flex;
+            width: 75%;
+            margin: auto;
+            .left {
+                display: block;
+                overflow: hidden;
+                width: 605;
+    
+                img {
+                    display: block;
+                    margin: 0;
+                    line-height: 0;
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+            .right {
+                width: 40%;
+                .formthunhat {
+                    display: flex;
+                    justify-content: center;
+    
+                    .name {
+                        display: flex;
+                        justify-content: center;
+                        max-width: 50%;
+                        padding-right: 1em;
+    
+                        .fa-solid {
+                            top: 8.6rem;
+                            @include stylerFA($color-1, 57.5em, 8.7rem);
+                            position: absolute;
+                        }
+                    }
+    
+                    .email {
+                        display: flex;
+                        justify-content: center;
+                        max-width: 50%;
+                        
+    
+                        .fa-solid {
+                            line-height: 1;
+    
+                        
+    
+                            @include stylerFA($color-1, 72em, 8.7rem);
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+    
+            form {
+                border-radius: 10px;
+                box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+                padding: 20px;
+                h2{
+                   @include stylerText($color-dark-4,$fs-11,$fw-3)
+                }
+    
+                .over {
+                    margin-bottom: 25px;
+                }
+    
+                .form-group {
+                    width: 90%;
+    
+                    .form-control {
+                        padding: 0.5rem 2.2rem;
+                    }
+    
+                    textarea {
+                        padding: 1em 1em 1em 3.5em !important;
+                        height: 90px;
+                        line-height: 1.5;
+                        font-size: 0.8em !important;
+                        border-radius: 20px;
+                    }
+    
+                    .input-group-langugue {
+                        display: flex;
+                        justify-content: center;
+                        max-width: 50%;
+                       
+    
+                        .fa-solid {
+                           
+                            @include stylerFA($color-1, 57.5em, 12.2rem);
+                            position: absolute;
+                        }
+                    }
+    
+                    .input-group-messages {
+                        @include stylerFA($color-1, 58em, 16.5rem);
+                        position: absolute;
+                    }
+                }
+            }
+    
             
-            text-align: center;
-            border-radius: 10px;
-            h4{
-                @include stylerText($color-1,$fs-10,$fw-2);
+        }
+        .tim2{
+            bottom: 0;
+            position: absolute;
+            pointer-events: none;
+            
+        
+            img {
+                max-width: 100%;
+                height: auto;
             }
-            h2{
-                @include stylerText($color-dark-4,$fs-9,$fw-3);
-            }
-            p{
-                @include stylerText($color-dark-2,$fs-1,$fw-1);
-                line-height: 1.8em;
-                
-            }
-           
         }
     }
+    
+    
 }

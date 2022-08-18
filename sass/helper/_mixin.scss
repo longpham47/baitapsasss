@@ -15,3 +15,9 @@
     border-radius: $radius-hover;
     color: $color-hover;
 }
+@mixin stylerFA($colorFA,$left,$top) {
+    color: $colorFA;
+    left: $left;
+    top: $top;
+    
+}
