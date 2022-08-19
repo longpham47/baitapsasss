@@ -19,7 +19,6 @@ html, body {
   color: #f5f9fe;
   font-size: 14px;
   font-weight: 600;
-  box-shadow: 0 3px 6px #c9d8f4;
   letter-spacing: 0.03rem;
   transition: all 0.3s;
 }
@@ -104,6 +103,7 @@ header .nav-icon i:hover {
   width: 80%;
 }
 .carosel .carosel2 .row .card {
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
   text-align: center;
   border-radius: 10px;
 }
@@ -220,11 +220,87 @@ header .nav-icon i:hover {
   position: absolute;
 }
 .carosel .carosel3 .tim2 {
-  bottom: 0;
-  position: absolute;
   pointer-events: none;
 }
 .carosel .carosel3 .tim2 img {
+  position: absolute;
   max-width: 100%;
   height: auto;
+  z-index: -5;
+  bottom: 0;
+}
+
+footer {
+  height: auto;
+  width: 100%;
+  background-image: url(../../img/images-20220809T144136Z-001/images/footer_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+footer .row {
+  padding: 0 0 200px;
+}
+footer .row .title {
+  line-height: 1.2;
+}
+footer .row .title h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 24px 0;
+}
+footer .row .footer-address div i {
+  padding-right: 8px;
+  color: #fff;
+}
+footer .row .footer-address span {
+  color: #fff;
+}
+footer .row .icon-mxh {
+  padding: 20px 0;
+  margin-right: 18px;
+}
+footer .row .icon-mxh a {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #fff;
+  text-decoration: none;
+  padding-top: 5px;
+  margin-right: 13px;
+  transition: all 0.5s;
+}
+footer .row .icon-mxh a:hover {
+  color: #181818;
+}
+footer .row .footer-menu a,
+footer .row .footer-About a {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+  text-decoration: none;
+}
+footer .row .footer-menu a:hover,
+footer .row .footer-About a:hover {
+  opacity: 0.6;
+}
+footer .row .new div {
+  padding: 30px 0 20px;
+}
+footer .row .new .email input {
+  background-color: #b61984;
+  padding: 13.5px 40px;
+  border: 1px solid white;
+  border-radius: 25px;
+  color: #fff;
+  text-align: center;
+}
+footer .row .new .btn {
+  padding: 13.5px 80px;
+  border-radius: 45px;
+  transition: all 300ms ease;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
