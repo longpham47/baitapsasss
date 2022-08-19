@@ -88,7 +88,7 @@
             .left {
                 display: block;
                 overflow: hidden;
-                width: 605;
+                width: 605px;
     
                 img {
                     display: block;
@@ -109,10 +109,11 @@
                         justify-content: center;
                         max-width: 50%;
                         padding-right: 1em;
+                        position: relative;
     
                         .fa-solid {
                             top: 8.6rem;
-                            @include stylerFA($color-1, 57.5em, 8.7rem);
+                            @include stylerFA($color-1, $fs-1,$fs-13);
                             position: absolute;
                         }
                     }
@@ -121,14 +122,14 @@
                         display: flex;
                         justify-content: center;
                         max-width: 50%;
-                        
+                        position: relative;
     
                         .fa-solid {
                             line-height: 1;
     
                         
     
-                            @include stylerFA($color-1, 72em, 8.7rem);
+                            @include stylerFA($color-1,$fs-13, $fs-13);
                             position: absolute;
                         }
                     }
@@ -166,17 +167,27 @@
                         display: flex;
                         justify-content: center;
                         max-width: 50%;
+                        position: relative;
+                       
+                     
                        
     
                         .fa-solid {
                            
-                            @include stylerFA($color-1, 57.5em, 12.2rem);
+                            @include stylerFA($color-1,$fs-13, $fs-13);
                             position: absolute;
+                           
                         }
                     }
     
                     .input-group-messages {
-                        @include stylerFA($color-1, 58em, 16.5rem);
+                        
+                       
+                        position: relative;
+
+                    }
+                    .fa-solid{
+                        @include stylerFA($color-1, $fs-14, $fs-15  );
                         position: absolute;
                     }
                 }
@@ -201,4 +212,20 @@
     }
     
     
+}
+
+@include responsive("large"){
+    .carosel{
+        
+    } 
+}
+@include responsive("medium"){
+    .carosel{
+       
+    } 
+}
+@include responsive("small"){
+    .carosel{
+        
+    } 
 }

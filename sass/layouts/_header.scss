@@ -33,3 +33,13 @@ header{
     
 }   
 
+@include responsive("large"){
+    header{
+        .navbar-toggler{
+            background-color: $color-yellow-1;
+        }
+        .nav-link{
+            text-align: center;
+        }
+    }
+}
